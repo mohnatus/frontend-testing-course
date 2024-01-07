@@ -1,0 +1,26 @@
+{
+	"name": "web-drivers",
+	"version": "1.0.0",
+	"description": "",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"test": "NODE_OPTIONS='$NODE_OPTIONS --experimental-vm-modules' npx jest",
+		"selenium": "node web-drivers/selenium.js",
+		"playwright": "node web-drivers/playwright.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"jest": "^29.7.0",
+		"playwright": "^1.40.1",
+		"selenium-webdriver": "^4.16.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.23.7",
+		"@babel/preset-env": "^7.23.7",
+		"babel-jest": "^29.7.0",
+		"jest-environment-jsdom": "^29.7.0"
+	}
+}
